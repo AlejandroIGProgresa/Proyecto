@@ -1,17 +1,39 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
+import {TabsComponent} from "./components/tabs/tabs.component";
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-];
+    component: TabsComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'inicio',
+        pathMatch: "full"
+      },
+      {
+        path: 'inicio',
+        loadChildren: () => import('../app/pages/inicio/inicio.module').then(
+
+          m => m.InicioPageModule)
+      },
+      {
+        path: 'categorias',
+        loadChildren: () => import('../app/pages/categorias/categorias.module').then( m =>
+
+          m.CategoriasPageModule)
+      },
+      {
+        path: 'buscar',
+        loadChildren: () => import('../app/pages/buscar/buscar.module').then( m =>
+
+          m.BuscarPageModule)
+      }
+    ]
+  }
+
+]
 
 @NgModule({
   imports: [
