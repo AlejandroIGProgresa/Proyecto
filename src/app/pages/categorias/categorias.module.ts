@@ -9,16 +9,18 @@ import {CategoriasPageRoutingModule} from './categorias-routing.module';
 import {CategoriasPage} from './categorias.page';
 import {ComponentsModule} from "../../components/components.module";
 import {InicioPageModule} from "../inicio/inicio.module";
+import {SwiperModule} from "swiper/angular";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    CategoriasPageRoutingModule,
-    ComponentsModule,
-    InicioPageModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        CategoriasPageRoutingModule,
+        ComponentsModule,
+        InicioPageModule,
+        SwiperModule
+    ],
   declarations: [CategoriasPage]
 })
 export class CategoriasPageModule {}
