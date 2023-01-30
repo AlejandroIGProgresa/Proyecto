@@ -1,9 +1,12 @@
-<ion-content class="ion-padding">
+<ion-content class="ion-page">
   <swiper [config]="options">
     <ng-template swiperSlide *ngFor="let a of [1,1,1,1,1,1,1,1]">
-      <ion-avatar class="ion-avatar">
+      <ion-chip>
+        <ion-avatar class="ion-avatar">
+          <ion-img src="assets/icon/cute-popcorn.ico"></ion-img>
+        </ion-avatar>
         <ion-label>Hola</ion-label>
-      </ion-avatar>
+      </ion-chip>
     </ng-template>
   </swiper>
 </ion-content>

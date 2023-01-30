@@ -31,7 +31,11 @@ const routes: Routes = [
           m.BuscarPageModule)
       }
     ]
-  }
+  }/*,
+  {
+    path: 'serie',
+    loadChildren: ()
+  }*/
 
 ]
 

@@ -8,9 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class CategoriasPage implements OnInit {
 
   options = {
-    slidesPerView: 4.5,
-    slidesOffsetBefore: 0,
-    separator: 10
+    slidesPerView: 4.25,
   }
 
   constructor() { }

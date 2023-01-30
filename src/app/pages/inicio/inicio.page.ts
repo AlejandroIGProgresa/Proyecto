@@ -10,7 +10,7 @@ export class InicioPage implements OnInit {
 
   @ViewChild(IonInfiniteScroll, {static: false}) infiniteScroll!: IonInfiniteScroll;
 
-  data: any[] = Array(20);
+  data: any[] = Array(3);
   constructor() { }
 
   ngOnInit() {
@@ -19,12 +19,12 @@ export class InicioPage implements OnInit {
   loadData(event: any) {
     console.log('Cargando siguientes ...');
     setTimeout(() =>{
-      if (this.data.length > 50) {
+      /*if (this.data.length > 0) {
         event.target.complete();
         this.infiniteScroll.disabled = true;
         return;
-      }
-      const nuevoArr = Array(20);
+      }*/
+      const nuevoArr = Array(3);
       this.data.push(...nuevoArr);
       event.target.complete();
     })
