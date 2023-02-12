@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Api/api-nest" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Ionic/componentes" vcs="Git" />
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Ionic" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Web" vcs="Git" />
   </component>
 </project>
